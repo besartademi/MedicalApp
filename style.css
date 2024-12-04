@@ -13,6 +13,8 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    /* Add this line to add a 1px border */
 }
 
 /* Header Section */
@@ -20,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
     margin-bottom: 20px;
     height: 120px;
@@ -30,7 +32,7 @@ body {
     width: 120px;
     height: 100%;
     background-color: transparent;
-    background-image: url('logo.png');
+    background-image: url("logo.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,15 +114,18 @@ body {
 }
 
 /* Diagnose and Therapy Sections */
-.diagnose-section, .therapy-section {
+.diagnose-section,
+.therapy-section {
     margin-bottom: 20px;
 }
 
-.diagnose-section label, .therapy-section label {
+.diagnose-section label,
+.therapy-section label {
     font-weight: bold;
 }
 
-.diagnose-section textarea, .therapy-section textarea {
+.diagnose-section textarea,
+.therapy-section textarea {
     width: calc(100% - 20px);
     padding: 8px;
     border: 1px solid #ccc;
