@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    height: 120px;
+}
+
+.logo {
+    width: 120px;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-info {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.header-info p {
+    margin: 2px 0;
+}
+
+.header-info h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+.header-info .doctor-name {
+    font-weight: bold;
+}
+
+.contact-info {
+    font-size: 12px;
+    text-align: right;
+    color: #333;
+}
+
+/* Title Section */
+.title {
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Patient Information Section */
+.patient-info {
+    margin-bottom: 20px;
+}
+
+.patient-info .name-surname {
+    display: flex;
+    gap: 20px;
+}
+
+.patient-info .name-surname div {
+    flex: 1;
+}
+
+.patient-info label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.patient-info input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.birthday-location {
+    display: flex;
+    gap: 20px;
+}
+
+.birthday-location div {
+    flex: 1;
+}
+
+/* Diagnose and Therapy Sections */
+.diagnose-section, .therapy-section {
+    margin-bottom: 20px;
+}
+
+.diagnose-section label, .therapy-section label {
+    font-weight: bold;
+}
+
+.diagnose-section textarea, .therapy-section textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Medical Information Section */
+.medical-info {
+    margin-bottom: 20px;
+}
+
+.medical-info .info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.medical-info .info-item label {
+    width: 100px;
+    font-weight: bold;
+}
+
+.medical-info .info-item input {
+    width: calc(100% - 110px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-right {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.signature-line {
+    width: 150px;
+    border-top: 1px solid #333;
+}
+
+.signature-text {
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-extra-text {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    margin-top: 20px;
+}

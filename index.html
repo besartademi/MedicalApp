@@ -4,194 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raport Specialistik</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Header Section */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .logo {
-            width: 80px;
-            height: 80px;
-            background-color: #007BFF;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-        }
-        .header-info {
-            text-align: center;
-            font-size: 14px;
-            color: #333;
-        }
-        .header-info h2, .header-info p {
-            margin: 2px 0;
-        }
-        .contact-info {
-            font-size: 12px;
-            text-align: right;
-            color: #333;
-        }
-
-        /* Title */
-        .title {
-            font-size: 24px;
-            text-align: center;
-            margin: 20px 0;
-            color: #333;
-        }
-
-        /* Patient Information Section */
-        .patient-info {
-            margin-bottom: 20px;
-        }
-        .patient-info .name-surname {
-            display: flex;
-            gap: 20px;
-        }
-        .patient-info .name-surname div {
-            flex: 1;
-        }
-        .patient-info label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .patient-info input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-bottom: 10px;
-            background-color: #f9f9f9;
-            font-size: 16px;
-        }
-        .birthday-location {
-            display: flex;
-            gap: 20px;
-        }
-        .birthday-location div {
-            flex: 1;
-        }
-
-        /* Diagnose Section */
-        .diagnose-section {
-            margin-bottom: 20px;
-        }
-        .diagnose-section label {
-            font-weight: bold;
-        }
-        .diagnose-section input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #f9f9f9;
-            font-size: 16px;
-        }
-
-        /* Medical Information Section */
-        .medical-info {
-            margin-top: 20px;
-        }
-        .medical-info .info-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .medical-info label {
-            font-weight: bold;
-            width: 30%;
-            margin-right: 10px;
-        }
-        .medical-info input {
-            width: 65%;
-            padding: 5px;
-            text-align: left;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #f9f9f9;
-            font-size: 14px;
-        }
-
-        /* Footer Section */
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 30px;
-            font-size: 14px;
-            color: #333;
-            padding-top: 20px;
-            border-top: 2px solid #007BFF;
-        }
-        .footer .date-location {
-            text-align: left;
-        }
-        .footer .signature-section {
-            text-align: right;
-        }
-        .signature-line {
-            border-top: 1px solid #000;
-            width: 150px;
-            margin-top: 20px;
-        }
-        .signature-text {
-            margin-top: 5px;
-            font-size: 12px;
-            color: #666;
-        }
-        .footer .extra-text {
-            width: 100%;
-            text-align: center;
-            font-size: 10px;
-            color: #666;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <!-- Header Section -->
         <div class="header">
-            <!-- Logo -->
-            <div class="logo">LOGO</div>
-            
-            <!-- Title and Doctor Info -->
+            <div class="logo"></div>
             <div class="header-info">
-                <h2>ORDINANCA SPECIALISTIKE PEDIATRIKE</h2>
-                <p>"R.H. PEDIATRIA"</p>
-                <p>Dr. med. Rexhep Hoxha</p>
+                <p>ORDINANCA SPECIALISTIKE PEDIATRIKE</p>
+                <h1>"R.H. PEDIATRIA"</h1>
+                <p class="doctor-name">Dr. med. Rexhep Hoxha</p>
                 <p>Specialist - Pediater</p>
             </div>
-
-            <!-- Contact Info -->
             <div class="contact-info">
                 <p>Mob: 044 117 605</p>
-                <p>Rr. Shahin Kolonja nr.10</p>
-            </div>
+                <p>Rr. Xhemajli Berisha nr.10</p>
+            </div>            
         </div>
 
         <!-- Title -->
@@ -201,101 +30,114 @@
         <div class="patient-info">
             <div class="name-surname">
                 <div>
-                    <label for="patient-first-name">First Name:</label>
+                    <label for="patient-first-name">Emri:</label>
                     <input type="text" id="patient-first-name" name="patient-first-name">
                 </div>
                 <div>
-                    <label for="patient-last-name">Last Name:</label>
+                    <label for="patient-last-name">Mbiemri:</label>
                     <input type="text" id="patient-last-name" name="patient-last-name">
                 </div>
             </div>
 
             <div class="birthday-location">
                 <div>
-                    <label for="birthday">Birthday:</label>
+                    <label for="birthday">Datelindja:</label>
                     <input type="date" id="birthday" name="birthday">
                 </div>
                 <div>
-                    <label for="location">Location:</label>
+                    <label for="location">Vendi:</label>
                     <input type="text" id="location" name="location">
                 </div>
-            </div>
+            </div>            
         </div>
 
         <!-- Diagnose Section -->
         <div class="diagnose-section">
-            <label for="diagnose">Diagnose:</label>
-            <input type="text" id="diagnose" name="diagnose">
+            <label for="diagnose">Dg.</label>
+            <textarea id="diagnose" name="diagnose"></textarea>
+        </div>
+
+        <!-- Therapy Section -->
+        <div class="therapy-section">
+            <label for="therapy">Th.</label>
+            <textarea id="therapy" name="therapy"></textarea>
         </div>
 
         <!-- Medical Information Section -->
         <div class="medical-info">
-            <div class="info-item">
-                <label for="te">TE.</label>
-                <input type="text" id="te" name="te">
-            </div>
-            <div class="info-item">
-                <label for="pl">PL.</label>
-                <input type="text" id="pl" name="pl">
-            </div>
-            <div class="info-item">
-                <label for="gjl">GJL.</label>
-                <input type="text" id="gjl" name="gjl">
-            </div>
-            <div class="info-item">
-                <label for="pt">PT.</label>
-                <input type="text" id="pt" name="pt">
-            </div>
-            <div class="info-item">
-                <label for="gjt">GJT.</label>
-                <input type="text" id="gjt" name="gjt">
-            </div>
-            <div class="info-item">
-                <label for="pk">PK.</label>
-                <input type="text" id="pk" name="pk">
-            </div>
-            <div class="info-item">
-                <label for="par">PAR.</label>
-                <input type="text" id="par" name="par">
-            </div>
-            <div class="info-item">
-                <label for="fr">FR.</label>
-                <input type="text" id="fr" name="fr">
-            </div>
-            <div class="info-item">
-                <label for="fz">FZ.</label>
-                <input type="text" id="fz" name="fz">
-            </div>
-            <div class="info-item">
-                <label for="vaks">VAKS.</label>
-                <input type="text" id="vaks" name="vaks">
-            </div>
-            <div class="info-item">
-                <label for="gjiri">GJIRI.</label>
-                <input type="text" id="gjiri" name="gjiri">
-            </div>
-        </div>
+          <div class="info-item">
+              <label for="te">TE.</label>
+              <input type="text" id="te" name="te">
+          </div>
+          <div class="info-item">
+              <label for="pl">PL.</label>
+              <input type="text" id="pl" name="pl">
+          </div>
+          <!-- New Line for GJL -->
+          <div class="info-item">
+              <label for="gjl">GJL.</label>
+              <input type="text" id="gjl" name="gjl">
+          </div>
+          <div class="info-item">
+              <label for="pt">PT.</label>
+              <input type="text" id="pt" name="pt">
+          </div>
+          <div class="info-item">
+              <label for="gjt">GJT.</label>
+              <input type="text" id="gjt" name="gjt">
+          </div>
+          <div class="info-item">
+              <label for="pk">PK.</label>
+              <input type="text" id="pk" name="pk">
+          </div>
+          <div class="info-item">
+              <label for="par">PAR.</label>
+              <input type="text" id="par" name="par">
+          </div>
+          <div class="info-item">
+              <label for="fr">FR.</label>
+              <input type="text" id="fr" name="fr">
+          </div>
+          <div class="info-item">
+              <label for="fz">FZ.</label>
+              <input type="text" id="fz" name="fz">
+          </div>
+          <div class="info-item">
+              <label for="vaks">VAKS.</label>
+              <input type="text" id="vaks" name="vaks">
+          </div>
+          <div class="info-item">
+              <label for="gjiri">GJIRI.</label>
+              <input type="text" id="gjiri" name="gjiri">
+          </div>
+      </div>
 
         <!-- Footer Section -->
         <div class="footer">
-            <!-- Date and Location on the Left -->
-            <div class="date-location">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <p>Prizren</p>
-            </div>
+          <div class="footer-left">
+              <div class="date-location">
+                  <div class="date">
+                      <label for="date-select">Data:</label>
+                      <input type="date" id="date-select" name="date" value="2024-12-04">
+                  </div>
+                  <div class="location">
+                      <p>Prizren</p>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="footer-right">
+              <div class="signature-line"></div>
+              <p class="signature-text">Nënshk. e faks.</p>
+          </div>
+      </div>
+      
 
-            <!-- Signature Section on the Right -->
-            <div class="signature-section">
-                <div class="signature-line"></div>
-                <p class="signature-text">Nënshkrimi dhe vula</p>
-            </div>
-        </div>
-
-        <!-- Extra Text -->
-        <div class="footer extra-text">
+        <div class="footer-extra-text">
             <p>NË KONTROLLË ÇDO HERË ME KËTË RAPORT MBRENDA 3 DITE</p>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
