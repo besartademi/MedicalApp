@@ -1,200 +1,206 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 14px;
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ccc;
-    /* Add this line to add a 1px border */
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
 }
 
 /* Header Section */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  height: 120px;
 }
 
 .logo {
-    width: 120px;
-    height: 100%;
-    background-color: transparent;
-    background-image: url("logo.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 120px;
+  height: 100%;
+  background-image: url("logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header-info {
-    text-align: center;
-    font-size: 14px;
-    color: #333;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
 }
 
 .header-info p {
-    margin: 2px 0;
+  margin: 2px 0;
 }
 
 .header-info h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 3px;
 }
 
 .header-info .doctor-name {
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .contact-info {
-    font-size: 12px;
-    text-align: right;
-    color: #333;
+  font-size: 14px;
+  text-align: right;
+  color: #333;
 }
 
 /* Title Section */
 .title {
-    font-size: 22px;
-    text-align: center;
-    margin: 20px 0;
-    color: #333;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
 }
 
 /* Patient Information Section */
 .patient-info {
     margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
 
-.patient-info .name-surname {
+.patient-info .name-surname,
+.patient-info .birthday-location {
     display: flex;
     gap: 20px;
+    margin-bottom: 10px;
 }
 
-.patient-info .name-surname div {
-    flex: 1;
+.patient-info .input-group-left,
+.patient-info .input-group-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.patient-info .input-group-left {
+    justify-content: flex-start;
+}
+
+.patient-info .input-group-right {
+    justify-content: center; /* Ensures the group starts from the center */
+    flex-grow: 1;
 }
 
 .patient-info label {
-    display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    width: 30%;
+    text-align: right;
 }
 
 .patient-info input {
-    width: calc(100% - 20px);
+    width: 50%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 10px;
     background-color: #f9f9f9;
     font-size: 14px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-.birthday-location {
-    display: flex;
-    gap: 20px;
-}
-
-.birthday-location div {
-    flex: 1;
-}
 
 /* Diagnose and Therapy Sections */
 .diagnose-section,
 .therapy-section {
+    display: flex;
+    align-items: center; /* Aligns label and textarea vertically */
+    gap: 10px; /* Adds spacing between the label and the textarea */
     margin-bottom: 20px;
 }
 
 .diagnose-section label,
 .therapy-section label {
     font-weight: bold;
+    flex-shrink: 0; /* Prevents the label from shrinking */
+    width: 50px; /* Fixed width for consistent alignment */
 }
 
 .diagnose-section textarea,
 .therapy-section textarea {
-    width: calc(100% - 20px);
+    flex-grow: 1; /* Allows the textarea to fill the remaining space */
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
     font-size: 14px;
     height: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+    resize: none; /* Prevents resizing of the textarea */
 }
+
 
 /* Medical Information Section */
-.medical-info {
-    margin-bottom: 20px;
-}
-
 .medical-info .info-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
 }
 
 .medical-info .info-item label {
-    width: 100px;
-    font-weight: bold;
+  width: 100px;
+  font-weight: bold;
 }
 
 .medical-info .info-item input {
-    width: calc(100% - 110px);
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    font-size: 14px;
+  width: calc(100% - 110px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
 }
 
 /* Footer Section */
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 20px;
-    padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  padding-top: 40px;
 }
 
 .footer-left {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer-right {
-    text-align: right;
-    flex-shrink: 0;
+  text-align: right;
 }
 
 .signature-line {
-    width: 150px;
-    border-top: 1px solid #333;
+  width: 150px;
+  border-top: 1px solid #333;
 }
 
 .signature-text {
-    font-size: 12px;
-    color: #333;
+  font-size: 12px;
+  color: #333;
 }
 
 .footer-extra-text {
-    text-align: center;
-    font-size: 12px;
-    color: #333;
-    margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  margin-top: 20px;
 }
