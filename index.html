@@ -30,27 +30,24 @@
 
         <!-- Patient Information Section -->
         <div class="patient-info">
-            <div class="name-surname">
-                <div class="input-group-left">
-                    <label for="patient-first-name">Emri:</label>
-                    <input type="text" id="patient-first-name" name="patient-first-name">
-                </div>
-                <div class="input-group-right">
-                    <label for="patient-last-name">Mbiemri:</label>
-                    <input type="text" id="patient-last-name" name="patient-last-name">
-                </div>
+            <div class="input-group">
+                <label for="patient-first-name">Emri:</label>
+                <input type="text" id="patient-first-name" name="patient-first-name">
             </div>
-            <div class="birthday-location">
-                <div class="input-group-left">
-                    <label for="birthday">Datelindja:</label>
-                    <input type="date" id="birthday" name="birthday">
-                </div>
-                <div class="input-group-right">
-                    <label for="location">Vendi:</label>
-                    <input type="text" id="location" name="location">
-                </div>
+            <div class="input-group">
+                <label for="patient-last-name">Mbiemri:</label>
+                <input type="text" id="patient-last-name" name="patient-last-name">
+            </div>
+            <div class="input-group">
+                <label for="birthday">Datelindja:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="input-group">
+                <label for="location">Vendi:</label>
+                <input type="text" id="location" name="location">
             </div>
         </div>
+
 
         <!-- Diagnose Section -->
         <div class="diagnose-section">
@@ -116,16 +113,22 @@
         <div class="footer">
             <div class="footer-left">
                 <div class="date-location">
-                    <label for="date-select">Data:</label>
-                    <input type="date" id="date-select" name="date" value="2024-12-04">
-                    <p>Prizren</p>
+                    <div class="date">
+                        <label for="date-select">Data:</label>
+                        <input type="date" id="date-select" name="date">
+                    </div>
+                    <div class="location">
+                        <p>Prizren</p>
+                    </div>
                 </div>
             </div>
+
             <div class="footer-right">
                 <div class="signature-line"></div>
                 <p class="signature-text">Nënshk. e faks.</p>
             </div>
         </div>
+
 
         <div class="footer-extra-text">
             <p>NË KONTROLLË ÇDO HERË ME KËTË RAPORT MBRENDA 3 DITE</p>
