@@ -78,8 +78,8 @@ body {
   grid-template-columns: 1fr 1fr; /* Two equal columns */
   gap: 20px; /* Space between columns and rows */
   margin-bottom: 20px;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
 }
 
 .patient-info .input-group {
