@@ -1,11 +1,21 @@
+/* General Body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* Use Roboto as the base font for the body */
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   font-size: 14px;
 }
 
+/* Update the input and textarea fields to use Roboto */
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+  /* Apply Roboto to input fields and textareas */
+}
+
+/* Other specific styling remains unchanged */
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -14,6 +24,21 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
+}
+
+input,
+textarea {
+  padding: 12px;
+  font-size: 1rem;
+  /* Use rem for better scaling */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  resize: none;
+  /* Disable resizing */
 }
 
 /* Header Section */
@@ -75,8 +100,10 @@ body {
 /* Patient Information Section */
 .patient-info {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  gap: 20px; /* Space between columns and rows */
+  grid-template-columns: 1fr 1fr;
+  /* Two equal columns */
+  gap: 20px;
+  /* Space between columns and rows */
   margin-bottom: 20px;
   border-bottom: 2px solid #333;
   padding-bottom: 20px;
@@ -85,13 +112,16 @@ body {
 .patient-info .input-group {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between label and input */
+  gap: 10px;
+  /* Space between label and input */
 }
 
 .patient-info label {
   font-weight: bold;
-  width: 100px; /* Fixed width for labels */
-  text-align: right; /* Aligns label text to the right */
+  width: 100px;
+  /* Fixed width for labels */
+  text-align: right;
+  /* Aligns label text to the right */
 }
 
 .patient-info input {
@@ -106,60 +136,78 @@ body {
 /* Diagnose Section */
 .diagnose-section {
   display: flex;
-  align-items: center; /* Aligns label and textarea vertically */
-  gap: 10px; /* Adds spacing between the label and the textarea */
+  align-items: center;
+  /* Aligns label and textarea vertically */
+  gap: 10px;
+  /* Adds spacing between the label and the textarea */
   margin-bottom: 20px;
 }
 
 .diagnose-section label {
   font-weight: bold;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
+  /* Increased font size */
   flex-shrink: 0;
-  width: 50px; /* Keep the label width consistent */
+  width: 50px;
+  /* Keep the label width consistent */
 }
 
 .diagnose-section textarea {
-  flex-grow: 1; /* Allows the textarea to fill the remaining space */
+  flex-grow: 1;
+  /* Allows the textarea to fill the remaining space */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f9f9f9;
   font-size: 14px;
-  height: 50px; /* Original height for Diagnose */
-  resize: none; /* Prevents resizing of the textarea */
+  height: auto;
+  /* Height will adjust based on rows */
+  resize: none;
+  /* Prevents resizing of the textarea */
+  rows: 2;
+  /* Limit the number of rows to 2 */
 }
 
 /* Therapy Section */
 .therapy-section {
   display: flex;
-  align-items: flex-start; /* Aligns label to the top of the textarea */
-  gap: 10px; /* Adds spacing between the label and the textarea */
+  align-items: flex-start;
+  /* Aligns label to the top of the textarea */
+  gap: 10px;
+  /* Adds spacing between the label and the textarea */
   margin-bottom: 20px;
 }
 
 .therapy-section label {
   font-weight: bold;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
+  /* Increased font size */
   flex-shrink: 0;
-  width: 50px; /* Consistent label width */
+  width: 50px;
+  /* Consistent label width */
 }
 
 .therapy-section textarea {
-  flex-grow: 1; /* Allows the textarea to fill the remaining space */
+  flex-grow: 1;
+  /* Allows the textarea to fill the remaining space */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f9f9f9;
   font-size: 14px;
-  height: 150px; /* Larger height for Therapy */
-  resize: none; /* Prevents resizing of the textarea */
+  height: 150px;
+  /* Larger height for Therapy */
+  resize: none;
+  /* Prevents resizing of the textarea */
 }
 
 /* Medical Information Section */
 .medical-info {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-  gap: 20px; /* Space between columns */
+  grid-template-columns: 1fr 1fr;
+  /* Two equal-width columns */
+  gap: 20px;
+  /* Space between columns */
 }
 
 .medical-info .info-item {
@@ -174,7 +222,8 @@ body {
 }
 
 .medical-info .info-item input {
-  width: calc(100% - 110px); /* Adjusts input width to fit beside the label */
+  width: calc(100% - 110px);
+  /* Adjusts input width to fit beside the label */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
