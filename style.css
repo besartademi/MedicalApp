@@ -1,21 +1,23 @@
-/* General Body */
+/* General Body - Keep original font */
 body {
-  font-family: 'Roboto', sans-serif;
-  /* Use Roboto as the base font for the body */
+  font-family: Arial, sans-serif; /* Keep original font for body text */
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
   font-size: 14px;
 }
 
-/* Update the input and textarea fields to use Roboto */
-input,
-textarea {
-  font-family: 'Roboto', sans-serif;
-  /* Apply Roboto to input fields and textareas */
+/* Apply Roboto font only to input and textarea fields */
+input, textarea {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto to input fields and textareas */
+  padding: 12px;
+  font-size: 1rem; /* Use rem for better scaling */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
 }
 
-/* Other specific styling remains unchanged */
+/* Other styling remains unchanged */
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -26,19 +28,9 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input,
-textarea {
-  padding: 12px;
-  font-size: 1rem;
-  /* Use rem for better scaling */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #f9f9f9;
-}
-
+/* Ensure that textareas do not resize */
 textarea {
   resize: none;
-  /* Disable resizing */
 }
 
 /* Header Section */
