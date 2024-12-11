@@ -103,24 +103,47 @@ body {
   font-size: 14px;
 }
 
-/* Diagnose and Therapy Sections */
-.diagnose-section,
-.therapy-section {
+/* Diagnose Section */
+.diagnose-section {
   display: flex;
   align-items: center; /* Aligns label and textarea vertically */
   gap: 10px; /* Adds spacing between the label and the textarea */
   margin-bottom: 20px;
 }
 
-.diagnose-section label,
-.therapy-section label {
+.diagnose-section label {
   font-weight: bold;
   font-size: 18px; /* Increased font size */
   flex-shrink: 0;
   width: 50px; /* Keep the label width consistent */
 }
 
-.diagnose-section textarea,
+.diagnose-section textarea {
+  flex-grow: 1; /* Allows the textarea to fill the remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  height: 50px; /* Original height for Diagnose */
+  resize: none; /* Prevents resizing of the textarea */
+}
+
+/* Therapy Section */
+.therapy-section {
+  display: flex;
+  align-items: flex-start; /* Aligns label to the top of the textarea */
+  gap: 10px; /* Adds spacing between the label and the textarea */
+  margin-bottom: 20px;
+}
+
+.therapy-section label {
+  font-weight: bold;
+  font-size: 18px; /* Increased font size */
+  flex-shrink: 0;
+  width: 50px; /* Consistent label width */
+}
+
 .therapy-section textarea {
   flex-grow: 1; /* Allows the textarea to fill the remaining space */
   padding: 8px;
@@ -128,15 +151,20 @@ body {
   border-radius: 4px;
   background-color: #f9f9f9;
   font-size: 14px;
-  height: 50px;
+  height: 150px; /* Larger height for Therapy */
   resize: none; /* Prevents resizing of the textarea */
 }
 
 /* Medical Information Section */
+.medical-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Space between columns */
+}
+
 .medical-info .info-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
   align-items: center;
 }
 
@@ -146,7 +174,7 @@ body {
 }
 
 .medical-info .info-item input {
-  width: calc(100% - 110px);
+  width: calc(100% - 110px); /* Adjusts input width to fit beside the label */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
